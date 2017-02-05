@@ -1,0 +1,12 @@
+Stocker/.vs/Stocker/v14/.suo
+Stocker/packages/
+Stocker/Stocker.WebApi/obj/
+Stocker/Stocker.WebApi/bin/
+Stocker/Stocker/bin/
+Stocker/Stocker.WebApi.Tests/bin/
+Stocker/Stocker.Tests/obj/
+Stocker/Stocker/obj/
+Stocker/Stocker.WebApi.Tests/obj/
+Stocker/Stocker.DataModel/obj/
+Stocker/Stocker.DataModel/bin/
+Stocker/Stocker/Stocker.csproj.user
