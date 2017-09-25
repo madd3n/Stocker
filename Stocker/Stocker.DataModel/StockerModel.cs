@@ -1,10 +1,11 @@
 namespace Stocker.DataModel
 {
+    using Entities;
     using System;
     using System.Data.Entity;
     using System.Linq;
 
-    public class StockerModel : DbContext
+    public class StockerModel : DbContext, IDisposable
     {
         // Your context has been configured to use a 'StockerModel' connection string from your application's 
         // configuration file (App.config or Web.config). By default, this connection string targets the 
@@ -20,7 +21,8 @@ namespace Stocker.DataModel
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
-        // public virtual DbSet<MyEntity> MyEntities { get; set; }
+        public virtual DbSet<Product> Product{ get; set; }
+        public virtual DbSet<ProductType> ProductType { get; set; }
     }
 
     //public class MyEntity
