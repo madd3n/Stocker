@@ -1,11 +1,9 @@
 namespace Stocker.DataModel
 {
     using Entities;
-    using System;
     using System.Data.Entity;
-    using System.Linq;
 
-    public class StockerModel : DbContext, IDisposable
+    public class StockerModel : DbContext
     {
         // Your context has been configured to use a 'StockerModel' connection string from your application's 
         // configuration file (App.config or Web.config). By default, this connection string targets the 

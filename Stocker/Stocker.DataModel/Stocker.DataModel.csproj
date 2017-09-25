@@ -53,10 +53,14 @@
   <ItemGroup>
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\ProductType.cs" />
+    <Compile Include="Entities\Supplier.cs" />
+    <Compile Include="Entities\SupplierProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StockerModel.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace Stocker.DataModel.Entities
 {
-    public class Product
+    public class Supplier
     {
-        public int ProductId { get; set; }
+        public int SupplierId { get; set; }
         public string Name { get; set; }
-        public int Amount { get; set; }
-        public decimal Cost { get; set; }
         public bool IsActive { get; set; }
-
-        public virtual ProductType Type { get; set; }
     }
 }
