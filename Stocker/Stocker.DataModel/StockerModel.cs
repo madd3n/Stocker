@@ -12,7 +12,7 @@ namespace Stocker.DataModel
         // If you wish to target a different database and/or database provider, modify the 'StockerModel' 
         // connection string in the application configuration file.
         public StockerModel()
-            : base("name=StockerModel")
+            : base("StockerModel")
         {
         }
 

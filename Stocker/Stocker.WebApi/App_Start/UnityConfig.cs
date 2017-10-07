@@ -1,4 +1,6 @@
 using Microsoft.Practices.Unity;
+using Stocker.DataModel.Entities;
+using Stocker.DataModel.Repositories;
 using System.Web.Http;
 using Unity.WebApi;
 
@@ -10,11 +12,8 @@ namespace Stocker.WebApi
         {
 			var container = new UnityContainer();
             
-            // register all your components with the container here
-            // it is NOT necessary to register your controllers
-            
-            // e.g. container.RegisterType<ITestService, TestService>();
-            
+            container.RegisterType<IRepository<Product>, Repository<Product>>();
+
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }

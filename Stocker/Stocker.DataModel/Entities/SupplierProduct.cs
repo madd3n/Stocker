@@ -1,6 +1,6 @@
 ﻿namespace Stocker.DataModel.Entities
 {
-    public class SupplierProduct
+    public class SupplierProduct: BaseEntity
     {
         public int SupplierId { get; set; }
         public int ProductId { get; set; }

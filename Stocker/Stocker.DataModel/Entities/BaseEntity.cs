@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Stocker.DataModel.Entities
 {
-    public class ProductType: BaseEntity
+    public class BaseEntity
     {
-        public int ProductTypeId { get; set; }
-        public string Name { get; set; }
-        public bool IsActive { get; set; }
-
     }
 }

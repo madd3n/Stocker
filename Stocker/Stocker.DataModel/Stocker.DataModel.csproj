@@ -51,15 +51,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\ProductType.cs" />
     <Compile Include="Entities\Supplier.cs" />
     <Compile Include="Entities\SupplierProduct.cs" />
+    <Compile Include="Migrations\201710071600500_Initial.cs" />
+    <Compile Include="Migrations\201710071600500_Initial.Designer.cs">
+      <DependentUpon>201710071600500_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
     <Compile Include="StockerModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Repositories\" />
+    <EmbeddedResource Include="Migrations\201710071600500_Initial.resx">
+      <DependentUpon>201710071600500_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
